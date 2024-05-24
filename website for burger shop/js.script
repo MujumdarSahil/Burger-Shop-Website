@@ -1,0 +1,26 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    // Implement your login logic here
+    console.log(`Email: ${email}, Password: ${password}`);
+    alert('Login functionality not implemented.');
+});
+
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+    }
+
+    // Implement your signup logic here
+    console.log(`Name: ${name}, Email: ${email}, Password: ${password}`);
+    alert('Signup functionality not implemented.');
+});
